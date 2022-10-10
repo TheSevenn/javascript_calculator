@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/2bb9b99d7e.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <section class="result-display">
+            <span class="input"></span>
+            <span class="under-line"></span>
+            <span class="output" id="result"></span>
+        </section>
+        <section class="operable-ui">
+            <div class="dark-light">
+                <div class="toggle-keys">
+                    <label for="light">light</label>
+                  <input type="radio" name="toggle-mode" id="light" value="light">
+                    <label for="dark" id="dark">dark</label>
+                  <input type="radio" name="toggle-mode" id="dark" value="dark">
+                </div>
+            </div>
+            <div class="operable-keys" >
+                <span class="clear-All" data-opt="clearall">AC</span>
+                <span class="clear" data-opt="clear"><i class="fas fa-times-circle"></i></span>
+                <span class="operator keys" data-opt="*">*</span>
+                <span class="operator keys" data-opt="/">/</span>
+                <span class="num keys" data-val="7">7</span>
+                <span class="num keys" data-val="8">8</span>
+                <span class="num keys" data-val="9">9</span>
+                <span class="operator keys" data-opt="-">-</span>
+                <span class="num keys" data-val="4">4</span>
+                <span class="num keys" data-val="5">5</span>
+                <span class="num keys" data-val="6">6</span>
+                <span class="operator keys" data-opt="+">+</span>
+                <span class="num keys" data-val="1">1</span>
+                <span class="num keys" data-val="2">2</span>
+                <span class="num keys" data-val="3">3</span>
+                <span class="num keys" data-val=".">.</span>
+                <span class="num keys" data-val="0">0</span>
+                <span class="equals" data-opt="equal">=</span>
+            </div>
+        </section> 
+    </div>
+    <script src="brain.js"></script>
+</body>
+</html>
